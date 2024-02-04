@@ -1,302 +1,224 @@
 [
- {
-    "id":1,
-    "name":"Table lamp",
-    "category":"Lights",
+  {
+    "id": 1,
+    "name": "Table lamp",
+    "category": "Lights",
     "price": 16.99,
     "image": "http://localhost:5050/images/Lamp.avif",
-    "referenceImage": "",
+    "referenceImage": "http://localhost:5050/images/table-lamp(reference).avif",
     "size": "12cm W x 36cm H",
     "weight": "3.2kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":2,
-    "name":"Dining chair(Ivory)",
-    "category":"Furniture",
+    "comments": []
+  },
+  {
+    "id": 2,
+    "name": "Dining chair(Ivory)",
+    "category": "Furniture",
     "price": 145,
-    "image":"http://localhost:5050/images/chair2.webp",
-    "referenceImage": "../public/images/chair2(reference).webp",
+    "image": "http://localhost:5050/images/chair2.webp",
+    "referenceImage": "http://localhost:5050/images/chair2(reference).webp",
     "size": "51cm x 84cm",
-    "weight":"6.8kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":3,
-    "name":"Air fryer",
-    "category":"Kitchen",
+    "weight": "6.8kg",
+    "comments": []
+  },
+  {
+    "id": 3,
+    "name": "Air fryer",
+    "category": "Kitchen",
     "price": 90,
     "image": "http://localhost:5050/images/airfryer.webp",
-    "referenceImage": "../public/images/airfryer(reference).webp",
+    "referenceImage": "http://localhost:5050/images/airfryer(reference).webp",
     "size": "27cm W x 34cm",
     "weight": "4.5kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":4,
-    "name":"Coffee Table",
-    "category":"Furniture",
+    "comments": []
+  },
+  {
+    "id": 4,
+    "name": "Coffee Table",
+    "category": "Furniture",
     "price": 150,
     "image": "http://localhost:5050/images/coffee-table.avif",
-    "referenceImage": "../public/images/coffeeTable.avif",
+    "referenceImage": "http://localhost:5050/images/coffeeTable.avif",
     "size": "70cm W x 42cm H",
     "weight": "12kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":5,
-    "name":"8 Drawer Double Dresser ",
-    "category":"Furniture",
+    "comments": [
+      { "id": "9a120d6c-9875-4ea4-a5f7-84c3461d78ce", "comment": "Hello" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "8 Drawer Double Dresser ",
+    "category": "Furniture",
     "price": 280,
     "image": "http://localhost:5050/images/drawer.jpeg",
-    "referenceImage": "../public/images/drawer(reference).jpeg",
+    "referenceImage": "http://localhost:5050/images/drawer(reference).jpeg",
     "size": "140cm W x 87.6cm H",
     "weight": "61kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":6,
-    "name":"Wood Garden Planter",
-    "category":"Furniture",
+    "comments": []
+  },
+  {
+    "id": 6,
+    "name": "Wood Garden Planter",
+    "category": "Furniture",
     "price": 120,
-    "image":"http://localhost:5050/images/gardenPlanter.webp",
-    "referenceImage": "../public/images/gardenPlanter(reference).webp",
+    "image": "http://localhost:5050/images/gardenPlanter.webp",
+    "referenceImage": "http://localhost:5050/images/gardenPlanters(reference).webp",
     "size": "76cm W x 38cm H",
     "weight": "14kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":7,
-    "name":"Arm Chair",
-    "category":"Furniture",
+    "comments": []
+  },
+  {
+    "id": 7,
+    "name": "Arm Chair",
+    "category": "Furniture",
     "price": 82,
-    "image":"http://localhost:5050/images/chair.avif",
-    "referenceImage": "../public/images/chair(reference).avif",
+    "image": "http://localhost:5050/images/chair.avif",
+    "referenceImage": "http://localhost:5050/images/chair(reference).avif",
     "size": "67cm W x 96cm H",
     "weight": "9.3kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":8,
-    "name":"Scented Candle",
-    "category":"HomeDecor",
+    "comments": []
+  },
+  {
+    "id": 8,
+    "name": "Scented Candle",
+    "category": "HomeDecor",
     "price": 15,
     "image": "http://localhost:5050/images/candle.webp",
-    "referenceImage": "",
+    "referenceImage": "http://localhost:5050/images/Candle(reference).webp",
     "size": "6.9cm W x 8cm H",
     "weight": "0.7kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":9,
-    "name":"Tobacco and Caramel Scented Jar Candle",
-    "category":"HomeDecor",
+    "comments": []
+  },
+  {
+    "id": 9,
+    "name": "Tobacco and Caramel Scented Jar Candle",
+    "category": "HomeDecor",
     "price": 40,
     "image": "http://localhost:5050/images/candle2.webp",
-    "referenceImage": "",
+    "referenceImage": "http://localhost:5050/images/candle2(reference).jpg",
     "size": "7.62cm W x 10.16cm H",
     "weight": "0.9kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":10,
-    "name":"Morning Garden Scented Tealight Candle",
-    "category":"HomeDecor",
+    "comments": []
+  },
+  {
+    "id": 10,
+    "name": "Morning Garden Scented Tealight Candle",
+    "category": "HomeDecor",
     "price": 10,
     "image": "http://localhost:5050/images/candle3.webp",
-    "referenceImage": "",
+    "referenceImage": "http://localhost:5050/images/candle3(reference).webp",
     "size": "3cm W x 3cm H",
     "weight": "0.05kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":11,
-    "name":"Unscented Flameless Candle",
-    "category":"HomeDecor",
+    "comments": []
+  },
+  {
+    "id": 11,
+    "name": "Unscented Flameless Candle",
+    "category": "HomeDecor",
     "price": 12,
     "image": "http://localhost:5050/images/candle4.webp",
-    "referenceImage": "",
+    "referenceImage": "http://localhost:5050/images/candle4(reference).jpg",
     "size": "1.5cm W x 1.5cm H",
     "weight": "0.02kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":12,
-    "name":"Reed Diffuser with Sticks",
-    "category":"HomeDecor",
+    "comments": []
+  },
+  {
+    "id": 12,
+    "name": "Reed Diffuser with Sticks",
+    "category": "HomeDecor",
     "price": 50,
     "image": "http://localhost:5050/images/Diffuser.webp",
-    "referenceImage": "../public/images/Diffuser(reference).webp",
+    "referenceImage": "http://localhost:5050/images/Diffuser(reference).webp",
     "size": "5cm W x 8.89cm H",
     "weight": "1kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":13,
-    "name":"LED string light with 40 lights",
-    "category":"Lights",
+    "comments": []
+  },
+  {
+    "id": 13,
+    "name": "LED string light with 40 lights",
+    "category": "Lights",
     "price": 11.99,
     "image": "http://localhost:5050/images/lights.avif",
-    "referenceImage": "../public/images/lights(reference).avif",
+    "referenceImage": "http://localhost:5050/images/lights(reference).avif",
     "size": "4.9m long",
     "weight": "0.6kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":14,
-    "name":"3 Drawer Oak Chest of Drawers",
-    "category":"Furniture",
+    "comments": []
+  },
+  {
+    "id": 14,
+    "name": "3 Drawer Oak Chest of Drawers",
+    "category": "Furniture",
     "price": 400,
     "image": "http://localhost:5050/images/Drawer2.webp",
-    "referenceImage": "../public/images/Drawer2(reference).webp",
+    "referenceImage": "http://localhost:5050/images/Drawer2(reference).webp",
     "size": "90cm W x 86cm H",
     "weight": "50kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-    
- },
- {
-    "id":15,
-    "name":"Floor lamp",
-    "category":"Lights",
+    "comments": []
+  },
+  {
+    "id": 15,
+    "name": "Floor lamp",
+    "category": "Lights",
     "price": 13,
     "image": "http://localhost:5050/images/Lamp2.avif",
-    "referenceImage": "../public/images/Lamp2(reference).avif",
+    "referenceImage": "http://localhost:5050/images/Lamp2(reference).avif",
     "size": "25cm W x 150cm H",
     "weight": "8.3kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":16,
-    "name":"Home Office Desk with Reversible Bookshelf",
-    "category":"Furniture",
+    "comments": []
+  },
+  {
+    "id": 16,
+    "name": "Home Office Desk with Reversible Bookshelf",
+    "category": "Furniture",
     "price": 150,
-    "image":"http://localhost:5050/images/Desk.webp",
-    "referenceImage": "../public/images/Desk(reference).webp",
-    "size":"122cm x 160cm",
+    "image": "http://localhost:5050/images/Desk.webp",
+    "referenceImage": "http://localhost:5050/images/Desk(reference).webp",
+    "size": "122cm x 160cm",
     "weight": "20kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":17,
-    "name":"Wood Standard Baker's Rack",
-    "category":"Kitchen",
+    "comments": []
+  },
+  {
+    "id": 17,
+    "name": "Wood Standard Baker's Rack",
+    "category": "Kitchen",
     "price": 140,
     "image": "http://localhost:5050/images/Baker's Rack.webp",
-    "referenceImage": "../public/images/Baker's Rack(reference).webp",
+    "referenceImage": "http://localhost:5050/images/Baker's Rack(reference).webp",
     "size": "80cm x 170cm",
     "weight": "6.5kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":18,
-    "name":"Kitchen Utensil Set-Silicone",
-    "category":"Kitchen",
+    "comments": []
+  },
+  {
+    "id": 18,
+    "name": "Kitchen Utensil Set-Silicone",
+    "category": "Kitchen",
     "price": 75,
     "image": "http://localhost:5050/images/KitchenUtensilSet.jpg",
-    "referenceImage": "../public/images/Kitchen Utensil Set(reference).jpg",
+    "referenceImage": "http://localhost:5050/images/Kitchen Utensil Set(reference).jpg",
     "size": "",
     "weight": "",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":19,
-    "name":"47.25in Desk",
-    "category":"Furniture",
+    "comments": []
+  },
+  {
+    "id": 19,
+    "name": "47.25in Desk",
+    "category": "Furniture",
     "price": 300,
     "image": "http://localhost:5050/images/47.25 Desk.webp",
-    "referenceImage": "../public/images/47.25 Desk(reference).webp",
+    "referenceImage": "http://localhost:5050/images/47.25 Desk(reference).webp",
     "size": "120cm x 76cm",
     "weight": "15kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- },
- {
-    "id":20,
-    "name":"Outdoor LED String Light",
-    "category":"Lights",
+    "comments": []
+  },
+  {
+    "id": 20,
+    "name": "Outdoor LED String Light",
+    "category": "Lights",
     "price": 10,
     "image": "http://localhost:5050/images/OutdoorLEDStringLight.webp",
-    "referenceImage": "../public/images/OutdoorLEDStringLight(reference).webp",
+    "referenceImage": "http://localhost:5050/images/OutdoorLEDStringLight(reference).webp",
     "size": "25cm long",
     "weight": "0.02kg",
-    "comments": [{
-        "id":"",
-        "comment": ""
-    }]
-
- }
+    "comments": []
+  }
 ]
