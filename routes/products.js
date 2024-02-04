@@ -37,26 +37,60 @@ router.get('/:productId', (req, res) => {
 
 
 //* posting a new comment *//
-router.post('/shop/:productId/comments', (req, res) => {
+router.post('/:productId/comments', (req, res) => {
     console.log('req.body for posting comments', req.body)
     const products = readProducts();
-    const product = products.find((eachItem) => eachItem.id === req.params.productId);
-    if (!req.body.comments) {
+    const productId = parseInt(req.params.productId)
+    const product = products.find((eachItem) => eachItem.id === productId);
+
+    if(!product) {
+        return res.status(404).json({error: "Product not found"})
+    }
+    if (!req.body.comment) {
         return res.status(400).send("comment required")
     }
     const newComment = {
         id: uuid4(),
-        comment: req.body.comments
+        comment: req.body.comment
     }
-    product.comments.push(newComment)
-    fs.writeFileSync(__dirname + '/../data/videos.json', JSON.stringify(products))
+    product.comments.unshift(newComment)
+    fs.writeFileSync(__dirname + '/../data/products.json', JSON.stringify(products))
 
-    res.status(201).json(newComment)
+    res.status(201).json(product)
     
 })
 
-//* editing comments *//
 
+//* editing comments *//
+router.patch('/:productId/comments/:commentId', (req, res) => {
+    const products = readProducts();
+    const productId = parseInt(req.params.productId);
+    const commentId = req.params.commentId;
+
+    const productIndex = products.findIndex((item) => item.id === productId)
+
+    if(productIndex === -1) {
+        return res.status(404).json({error: "Product not found"})
+    }
+
+    const product = products[productIndex]
+
+    const commentIndex = product.comments.findIndex((comment) => comment.id === commentId)
+
+    if(commentIndex === -1) {
+        return res.status(404).json({error: "Comment not found"})
+    }
+    if (!req.body.comment) {
+        return res.status(400).send("comment required")
+    }
+
+    product.comments[commentIndex].comment = req.body.comment
+
+    products[productIndex] = product;
+
+    fs.writeFileSync(__dirname + '/../data/products.json', JSON.stringify(products))
+    res.json(product);
+})
 
 
 
@@ -64,6 +98,32 @@ router.post('/shop/:productId/comments', (req, res) => {
 
 
 //* deleting comments *//
+router.delete('/:productId/comments/:commentId', (req, res) => {
+    const products = readProducts();
+    const productId = parseInt(req.params.productId);
+    const commentId = req.params.commentId;
 
+    const productIndex = products.findIndex((item) => item.id === productId)
+
+    if(productIndex === -1) {
+        return res.status(404).json({error: "Product not found"})
+    }
+
+    const product = products[productIndex]
+
+    const commentIndex = product.comments.findIndex((comment) => comment.id === commentId)
+
+    if(commentIndex === -1) {
+        return res.status(404).json({error: "Comment not found"})
+    }
+    
+    product.comments.splice(commentIndex, 1)
+
+    products[productIndex] = product;
+
+    fs.writeFileSync(__dirname + '/../data/products.json', JSON.stringify(products))
+    res.json(product);
+
+})
 
 module.exports = router;
